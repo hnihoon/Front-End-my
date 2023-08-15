@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input</title>
+  </head>
+  <body>
+    <!-- ex) 백엔드에서 로그인하는 api(기능)의 주소가 user/Login 했을 때 -->
+    <!-- 제출 시 input tag의 name을 자동으로 읽어서 백엔드서버에 전달 -->
+    <form action="./01_복습.html" method="post">
+      <!-- 
+            *method
+                get
+                데이터를 url로 쿼리 혹은 파람의 형태로 전달
+
+                post
+                body(본문, 데이터) 안에 데이터를 전송
+
+                ex) 로그인
+                로그인의 아이디와 비밀번호와 같은 공개되면 안되는 자료이기 때문에 post를 이용, 사용자고유번호
+         -->
+      <label><input type="radio" name="mode" />관리자</label>
+      <label><input type="radio" name="mode" />사용자</label>
+      <p>아이디 : <input tpye="text" name="user-id" /></p>
+      <p>비밀번호 : <input type="password" name="user-pw" /></p>
+      <button type="submit">로그인</button>
+      <!-- <input type="submit"/> -->
+      <!-- submit form 태그의 데이터를 서버에 전송할 때 쓰는 제출 버튼 -->
+
+      <!-- <input type="button" value="로그인"/> == <button>로그인</button> -->
+    </form>
+  </body>
+</html>

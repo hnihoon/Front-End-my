@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시글등록</title>
+  </head>
+  <body>
+    <!-- 단일태그와 단일태그가 아닌 것의 차이점
+        
+        일반태그 (내용물이 있음)
+        <태그명 속성="값">...(내용물)</태그명>
+        ex) <div></div> , <p></p>, <span></span> ...
+
+        단일태그 (내용물이 없음)
+        <img/>
+        <input/>
+
+    -->
+
+    <form>
+      <p>
+        글제목
+        <input type="text" maxlength="13" size="30" value="글 작성해주세요" />
+      </p>
+      <p>작성날짜 <input type="date" /></p>
+      <p>
+        내용
+        <textarea cols="10" rows="10">
+<!--value(택스트 에어리어의 값--></textarea
+        >
+      </p>
+      <p>파일 첨부 <input type="file" /></p>
+      <div>
+        <button type="submit">등록</button>
+        <button type="reset">초기화</button>
+      </div>
+    </form>
+  </body>
+</html>
