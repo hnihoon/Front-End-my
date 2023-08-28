@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블</title>
+  </head>
+  <body>
+    <!-- width 랑 height의 길이는 px,% 등 다양한 단위를 사용 가능-->
+    <!-- html에서 태그 안아 엤는 태그들을 자식 태그라고 하고, 항위 태그를 부모 태그(요소)라고 한다.-->
+    <table border="1" width="70%">
+      <caption>
+        게시판
+      </caption>
+      <tr height="50px">
+        <th>글번호</th>
+        <th width="50%">제목</th>
+        <th>작성자</th>
+        <th>작성날짜</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td align="center">오늘 날씨 정말 덥네요</td>
+        <td align="right">KDH</td>
+        <td align="left">23-08-26</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td rowspan="2">4</td>
+        <td colspan="2">5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+    </table>
+  </body>
+</html>
