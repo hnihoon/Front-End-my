@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS의 텍스트2</title>
+    <style>
+      .content {
+        border: 3px solid #f00;
+        width: 600px;
+        padding: 4px;
+        white-space: wrap;
+        /* 기본값은 normal, 줄바꿈x nowrap 줄바꿈o wrap */
+        /* pre (긴 공백을 유지) */
+
+        overflow: hidden;
+        /* overflow: hidden; 배너나 슬라이드 */
+        text-overflow: ellipsis; /* 말줄임 ... overflow가 hidden인 경우에만 적용*/
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* 세로 줄 수*/
+        -webkit-box-orient: vertical; /* 컨텐츠 배치 방식 */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS의 텍스트2</h2>
+    <p class="content">
+      Lorem ipsum, dolor sit amet c onsectetur adipisicing elit. Consequuntur ex
+      animi dicta sequi accusamus, a, voluptates facere ipsa vel nam hic,
+      corporis iure magnam quidem repellendus quibusdam et eligendi ratione.
+      Lorem ipsum, dolor sit amet c onsectetur adipisicing elit. Consequuntur ex
+      animi dicta sequi accusamus, a, voluptates facere ipsa vel nam hic,
+      corporis iure magnam quidem repellendus quibusdam et eligendi ratione.
+    </p>
+  </body>
+</html>
