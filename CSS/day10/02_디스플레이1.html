@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>디스플레이1</title>
+        <style>
+            div {
+                margin: 20px;
+                border: 1px solid deeppink;
+                border-radius: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            img {
+                border: 1px solid deepskyblue;
+            }
+
+            .ib {
+                border: 3px solid #0000ff;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                display: inline-block;
+            }
+
+            span {
+                border-radius: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #block img {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>디스플레이1</h2>
+        <div id="inline">
+            <img src="img/1.jpg" alt="베이지" />
+            <img src="img/2.jpg" alt="하늘색" />
+            <img src="img/3.jpg" alt="초록색" />
+        </div>
+        <div id="block">
+            <img src="img/1.jpg" alt="베이지" />
+            <img src="img/2.jpg" alt="하늘색" />
+            <img src="img/3.jpg" alt="초록색" />
+        </div>
+        <hr />
+        <!-- 직선의 선을 그어준다-->
+        <span class="ib"></span>
+        <span class="ib"></span>
+        <span class="ib"></span>
+        <hr />
+        <div class="ib"></div>
+        <div class="ib"></div>
+        <div class="ib"></div>
+    </body>
+</html>
