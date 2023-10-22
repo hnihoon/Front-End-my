@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>입력폼</title>
+        <style>
+            /* reset css */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px 20px;
+                /* 위,아래, 좌우 */
+                background-color: #fffff0;
+                margin: 5px 0;
+            }
+
+            input[type="text"] {
+                border: none; /* 블럭상자 줄 제거 */
+                border-radius: 15px;
+                color: #ff1493;
+            }
+
+            input[type="password"]:focus {
+                /* 커서 클릭시 효과 발생*/
+                border-bottom: 3px solid #ff0000;
+                outline: none;
+            }
+
+            input[type="text"]::placeholder {
+                color: #00ff00;
+            }
+
+            select {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 2px dotted #9acd32;
+                font-weight: bold;
+            }
+
+            select:focus {
+                outline: none;
+            }
+
+            textarea {
+                width: 100%;
+                height: 200px;
+                resize: none; /* textarea 크기 변경 기능 제거 */
+                padding: 10px;
+                font-size: 32px;
+            }
+
+            input[type="reset"],
+            input[type="submit"] {
+                width: 160px;
+                background-color: #fff;
+                color: #b0e0e6;
+                border: 1px solid #b0e0e6;
+                cursor: pointer; /* 마우스 모양을 바꿔줌 */
+                border: none;
+                border-radius: 5px;
+            }
+
+            input[type="submit"]:hover {
+                opacity: 0.7; /* 투명도 1이 기본값 숫자가 0에 가까울수록 투명해짐 */
+                background-color: #b0e0e6;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <!-- 
+        <post>
+        localhost:3000/api/login
+
+        <get>
+        localhost:3000/api/login?user-id=&user-pw=
+
+     -->
+    <body>
+        <h2>입력폼</h2>
+        <!-- 주로 백엔드 주소 -->
+        <!-- form태그 안의 데이터들이 해당 주소로 전달되는 방법 -->
+        <form action="/" method="get">
+            <p> <!-- required : 내용을 입력하지 않을경우 알림발생 -->
+                아이디 :
+                <input
+                    type="text"
+                    placeholder="아이디를 입력해주세요"
+                    name="user-id"
+                    required
+                />
+            </p>
+            <p>
+                비밀번호 :
+                <input
+                    type="password"
+                    placeholder="비밀번호를 입력해주세요"
+                    name="user-pw"
+                />
+            </p>
+            <p>
+                직업
+                <select name="user-job">
+                    <option value="1">강사</option>
+                    <option value="2">개발자</option>
+                    <option value="3">학생</option>
+                    <option value="4">기타</option>
+                </select>
+            </p>
+            <p>
+                자기소개
+                <textarea
+                    placeholder="300자 이상 1000자 이하"
+                    name="user_info"
+                ></textarea>
+            </p>
+            <div>
+                <input type="submit" value="회원가입" />
+                <input type="reset" value="다시작성" />
+                <button>돌아가기</button>
+            </div>
+        </form>
+    </body>
+</html>
