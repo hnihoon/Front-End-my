@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                width: 100vw;
+                min-height: 3rem;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            #container {
+                width: 1024px;
+                margin: 0 auto;
+                /* calc : 계산기능(전체크기 - (header + footer)) */
+                height: calc(100vh - 11rem);
+                background-color: #faebd7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form > p {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+            }
+
+            form > p > span {
+                margin-right: 1rem;
+            }
+
+            form > div {
+                text-align: center;
+            }
+
+            form > div > button {
+                width: 100%;
+                border: none;
+                background-color: #4682b4;
+                color: #fff;
+                height: 2rem;
+            }
+
+            footer {
+                width: 100vw;
+                height: 8rem;
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <div id="container">
+            <!-- 실제 코드 작성할 공간 -->
+            <form>
+                <p><span>아이디 : </span> <input type="text" /></p>
+                <p><span>비밀번호 : </span> <input type="text" /></p>
+                <div>
+                    <button type="submit">로그인</button>
+                </div>
+            </form>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>
